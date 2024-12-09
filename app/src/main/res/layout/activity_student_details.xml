@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#6200EE"
+        android:title="Create Student"
+        android:titleTextColor="@android:color/white" />
+    <!-- Student Image -->
+    <ImageView
+        android:id="@+id/studentImageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:src="@drawable/default_image"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_image_background"
+        android:elevation="4dp" />
+
+    <!-- Student Name -->
+    <TextView
+        android:id="@+id/studentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#6200EE"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
+
+    <!-- Information Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_card_background"
+        android:padding="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/studentBirthDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birth Date:"
+            android:textSize="16sp"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/studentBirthDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2023-11-12"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/studentGenderLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/studentGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Girl"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/studentClassLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/studentClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4eme"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/studentParentNameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent ID:"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/studentParentName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BRRRENGXPog7y2ZksOlskTlQ7bu1"
+            android:textSize="16sp"
+            android:textColor="#555555"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp">
+
+        <Button
+            android:id="@+id/editStudentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#03DAC5"
+            android:background="@drawable/button_background"
+            android:layout_marginEnd="8dp"
+            android:padding="12dp" />
+
+        <Button
+            android:id="@+id/deleteStudentButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#D32F2F"
+            android:background="@drawable/button_background"
+            android:padding="12dp" />
+    </LinearLayout>
+</LinearLayout>

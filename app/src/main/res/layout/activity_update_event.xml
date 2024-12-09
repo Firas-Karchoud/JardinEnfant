@@ -1,0 +1,39 @@
+<!-- res/layout/activity_update_event.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Title Input Field -->
+    <EditText
+        android:id="@+id/titleInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Title"
+        android:inputType="text" />
+
+    <!-- Date Input Field -->
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Date"
+        android:inputType="text" />
+
+    <!-- Location Input Field -->
+    <EditText
+        android:id="@+id/locationInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Event Location"
+        android:inputType="text" />
+
+    <!-- Update Event Button -->
+    <Button
+        android:id="@+id/updateEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Event"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

@@ -1,0 +1,132 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toolbar with primary color background -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#6200EE"
+            android:title="Create Student"
+            android:titleTextColor="@android:color/white" />
+
+
+        <!-- Form fields with rounded edges and consistent color scheme -->
+        <EditText
+            android:id="@+id/firstNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:background="@drawable/rounded_edit_text_background"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/lastNameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:background="@drawable/rounded_edit_text_background"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <EditText
+            android:id="@+id/birthDateInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Birth Date (YYYY-MM-DD)"
+            android:focusable="false"
+            android:clickable="true"
+            android:background="@drawable/rounded_edit_text_background"
+            android:padding="10dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Gender Spinner with rounded background -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textColor="#6200EE"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_spinner_background"
+            android:padding="10dp"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- Class Spinner with rounded background -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Class:"
+            android:textColor="#6200EE"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/classSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_spinner_background"
+            android:padding="10dp"
+            android:popupBackground="#FFFFFF" />
+
+        <!-- Client Spinner for specific user roles -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Parent ID:"
+            android:textColor="#6200EE"
+            android:layout_marginTop="12dp" />
+
+        <Spinner
+            android:id="@+id/clientSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_spinner_background"
+            android:padding="10dp"
+            android:popupBackground="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+        <!-- Image Upload Section -->
+        <ImageView
+            android:id="@+id/studentImageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/default_image"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Image"
+            android:backgroundTint="#03DAC5"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_background" />
+
+        <!-- Create Student Button -->
+        <Button
+            android:id="@+id/createStudentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Student"
+            android:backgroundTint="#6200EE"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/button_background" />
+    </LinearLayout>
+</ScrollView>

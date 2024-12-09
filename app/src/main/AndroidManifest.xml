@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.MediaStore.createWriteRequest" />
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JardinEnfantMobile"
+        tools:targetApi="31">
+        <activity
+            android:name=".user.AdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.DeleteProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UpdateEmailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UploadProfilePictureActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.ForgotPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".user.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Student.CreateStudentActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Student.StudentsListActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Student.StudentDetailsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Student.UpdateStudentActivity"
+            android:exported="true"/>
+        <activity android:name=".Student.StudentsStatisticsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".classes.ClassListActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".events.ClientEventsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".events.AdminEventsActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".events.EventRegistrationActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".events.UpdateEventActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".events.CreateEventActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".classes.AddClassActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".classes.EditClassActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Finance.activity.PaymentActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".Finance.activity.OnlinePaymentActivity"
+            android:exported="true"/>
+
+        <activity
+            android:name=".user.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

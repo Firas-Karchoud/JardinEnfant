@@ -1,0 +1,39 @@
+<!-- res/layout/item_event.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <!-- Event title -->
+    <TextView
+        android:id="@+id/eventTitle"
+        android:layout_width="101dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Event Title"
+        android:textSize="16sp" />
+
+    <!-- Event date -->
+    <TextView
+        android:id="@+id/eventDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Date"
+        android:textSize="14sp"
+        android:layout_marginRight="45dp"/>
+
+    <!-- Delete button (for AdminEventsActivity only) -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete" />
+
+    <!-- Edit button (for AdminEventsActivity only) -->
+    <Button
+        android:id="@+id/editButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit" />
+</LinearLayout>

@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- ImageView pour afficher l'image de jardin d'enfants -->
+    <ImageView
+        android:id="@+id/jardinImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/download_jardin_enfants_1" />
+
+    <!-- TabLayout pour afficher les onglets -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed" />
+
+    <EditText
+        android:id="@+id/parentName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom du Parent" />
+
+    <EditText
+        android:id="@+id/parentPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de téléphone du Parent" />
+
+    <EditText
+        android:id="@+id/paymentAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="le montant à payer" />
+
+    <!-- ViewPager2 pour les pages des onglets -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Bouton pour procéder au paiement -->
+    <Button
+        android:id="@+id/button_proceed_payment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Procéder au Paiement" />
+
+</LinearLayout>

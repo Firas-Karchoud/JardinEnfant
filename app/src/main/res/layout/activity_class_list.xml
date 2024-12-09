@@ -1,0 +1,73 @@
+<!-- activity_class_list.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cut_card_background"
+    tools:context=".classes.ClassListActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liste des classes"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_margin="12dp" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_margin="12dp"
+        android:hint="Rechercher une classe"
+        android:padding="10dp"
+        android:background="@drawable/search_bar_background"
+        android:drawableStart="@android:drawable/ic_menu_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView_classes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/searchBar"
+        android:layout_above="@id/paginationLayout"
+        android:padding="10dp"
+        tools:listitem="@layout/activity_item_class" />
+
+    <!-- Layout to hold pagination buttons -->
+    <LinearLayout
+        android:id="@+id/paginationLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <Button
+            android:id="@+id/btnPreviousPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Précédent"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnNextPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Suivant" />
+
+        <Button
+            android:id="@+id/btnAddClass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Ajouter Nouvelle Classe" />
+    </LinearLayout>
+
+</RelativeLayout>

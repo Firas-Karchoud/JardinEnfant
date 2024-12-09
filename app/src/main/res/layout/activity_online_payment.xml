@@ -1,0 +1,41 @@
+<!-- res/layout/activity_online_payment.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/creditCardNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Numéro de carte bancaire"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CVV"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/expirationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date d'expiration (MM/AA)"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/confirmPaymentButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmer le Paiement" />
+
+    <Button
+        android:id="@+id/testEmailButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer un email de test" />
+</LinearLayout>

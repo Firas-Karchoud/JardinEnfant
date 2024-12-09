@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">JardinEnfantMobile</string>
+    <string-array name="gender_options">
+        <item>Boy</item>
+        <item>Girl</item>
+    </string-array>
+    <string-array name="gender_filter_options">
+        <item>All</item>
+        <item>Boy</item>
+        <item>Girl</item>
+    </string-array>
+    <string name="class_filter_prompt">Select a Class</string>
+    <string name="gender_filter_prompt">Select a Gender</string>
+    <string name="age_format">Age: %d</string>
+
+
+</resources>
+

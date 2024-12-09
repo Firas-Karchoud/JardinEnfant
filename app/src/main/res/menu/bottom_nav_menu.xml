@@ -1,0 +1,26 @@
+<!-- res/menu/bottom_nav_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_events"
+        android:icon="@drawable/ic_event"
+        android:title="Events" />
+    <item
+        android:id="@+id/navigation_students"
+        android:icon="@drawable/ic_baseline_person_24"
+        android:title="Students" />
+    <item
+        android:id="@+id/navigation_classes"
+        android:icon="@drawable/baseline_account_balance_24"
+        android:title="Classes" />
+    <item
+        android:id="@+id/navigation_finance"
+        android:icon="@drawable/baseline_attach_money_24"
+        android:title="Classes" />
+
+    <!-- Add additional menu items as needed -->
+</menu>

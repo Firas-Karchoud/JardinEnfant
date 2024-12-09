@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "939083424418",
+    "firebase_url": "https://complexe-dhouha-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "complexe-dhouha",
+    "storage_bucket": "complexe-dhouha.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939083424418:android:29352837df07c38703edfb",
+        "android_client_info": {
+          "package_name": "com.example.jardinenfantmobile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBclziBjl5_a4guhSocxSX5cItEIcTwSE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
